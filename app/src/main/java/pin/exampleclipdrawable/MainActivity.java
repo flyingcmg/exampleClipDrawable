@@ -29,7 +29,6 @@ public class MainActivity extends Activity {
 
                 switch (motionEvent.getAction()){
                     case MotionEvent.ACTION_MOVE:
-
                         if(clipDrawable.getLevel() == maxWidth){
                             clipDrawable.setLevel(0);
                         }else{
@@ -40,13 +39,5 @@ public class MainActivity extends Activity {
                 return false;
             }
         });
-
-      /*  bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("CMG", "onClick: clipDrawable.getLevel()="+clipDrawable.getLevel());
-                clipDrawable.setLevel(1000);
-            }
-        });*/
     }
 }
