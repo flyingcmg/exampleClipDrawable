@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 
                 switch (motionEvent.getAction()){
                     case MotionEvent.ACTION_MOVE:
-                        Log.d("CMG", "onTouch: "+clipDrawable.getLevel()+"//"+"//"+clipDrawable.isVisible());
+
                         if(clipDrawable.getLevel() == maxWidth){
                             clipDrawable.setLevel(0);
                         }else{
